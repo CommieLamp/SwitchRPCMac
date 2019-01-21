@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NintenZone/SwitchRPC.git"
+    "url": "git+https://github.com/Superleximus.SwitchRPCMac.git"
   },
   "author": "NintenGamer64",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/NintenZone/SwitchRPC/issues"
   },
-  "homepage": "https://github.com/NintenZone/SwitchRPC#readme",
+  "homepage": "https://github.com/Superleximus/SwitchRPCMac/#readme",
   "dependencies": {
     "discord-rich-presence": "0.0.6",
     "electron-squirrel-startup": "^1.0.0"

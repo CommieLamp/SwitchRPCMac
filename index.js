@@ -2,7 +2,7 @@
 let production = true;
 let version = 3;
 
-const rpc = require('discord-rich-presence')('387406899739623426');
+const rpc = require('discord-rich-presence')('536748156805840907');
 const request = require('request');
 const electron = require('electron');
 const url = require('url');
