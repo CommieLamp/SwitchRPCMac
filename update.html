@@ -1,17 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Nintendo Switch RPC - Update</title>
-    <link type="text/css" rel="stylesheet" href="style.css" media="screen">
-    <style>
-        a {
-            text-align: center;
-            font-size: 15pt;
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- saved from url=(0066)https://apps.apple.com/us/app/macos-sierra/id1127487414?ls=1&mt=12 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex,nofollow">
+    <style type="text/css">
+
+        body {
+        text-align: center;
+        height: 100%;
+		margin: 0;
+		padding: 0;
         }
+
+        body.rtl {
+            direction: rtl !important;
+            text-align: right !important;
+        }
+
+        html , body {
+        background:white !important;
+        }
+
+        img {
+        border-width: 0px; /* need this for firefox */
+        }
+
+        div.loadingbox {
+        width: 800px;
+        margin: 0 auto;
+        padding: 0px;
+        text-align: left;
+        border:0;
+
+        position: absolute;
+        top: 50%;
+        margin-top: -135px;
+        width: 100%;
+        }
+
+        table.info {
+        width: 270px;
+        }
+
+        div.cover {
+        width: 100px;
+        text-align: right;
+        }
+
+        div.loadingbox div.cover img {
+        margin-top: 40px;
+        }
+
+        div.loadingbox p {
+        color: #999;
+        font: 14px;
+        font-family: "Myriad Set Pro", "Helvetica Neue", "sans-serif";
+        margin: 0;
+        padding: 1px 10px 0px 10px;
+        }
+
+        div.loadingbox p.title {
+        color: #333;
+        font-size: 45px;
+        line-height:58px;
+        font-weight:200;
+        padding: 0px 20px 3px 20px;
+        text-align: center;
+        }
+
+        div.loadingbox p.subtitle {
+        color: #666;
+        font-size: 15px;
+        padding: 0px 20px;
+        }
+
+        div.loadingbox p.heading {
+        color: #666;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        }
+
+        div.loadingbox p.footer {
+        color: #666;
+        font-size: 12px;
+        text-align: center;
+        padding: 20px 20px 0px 20px;
+        width: 400px;
+        margin: 0 auto;
+        }
+
+        img.corner {
+        width: 13px;
+        height: 13px;
+        border: none;
+        display: block !important;
+        position: relative;
+        left: -6px;
+        }
+
+        div.clear {
+        clear: both;
+        }
+
+        p.dark {
+        color: #333;
+        }
+
+        a {
+        text-decoration: none;
+        border-width: 0px;
+        }
+
+        span#test {
+        content: "foo";
+        display: inline-block;
+        width: 100px;
+        }
+
+        div#loadingbox-wrapper {
+        position: relative;
+        height: 100%;
+        }
+		
+		.center {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+		padding: 50px;
+		cursor: pointer;
+}
     </style>
+ 
+   <div class="loadingbox">
+      <p class="title">SwitchRPCmac needs to be updated.</p>
+
+       <div class="clear"></div>
+
+      <p class="footer">Please click the below Github link to go to download the latest release.</p>
+		  <a href="https://github.com/CommieLamp/SwitchRPCMac/releases"><img src="./assets/get-it-on-github.png" width="150" title="Get It On GitHub" alt="Get It On GitHub" target="_blank" class="center" id="giog"></a>
+	</div>
 </head>
-<body>
-    <a href="https://github.com/Superleximus/SwitchRPCMac/releases">Application Outdated - Click Here</a>
-</body>
+<script>
+	window.$ = window.jQuery = require('jquery');
+    var shell = require('electron').shell;
+    //open links externally by default
+    $(document).on('click', 'a[href^="http"]', function(event) {
+        event.preventDefault();
+        shell.openExternal(this.href);
+    });
+</script>
 </html>

@@ -67,22 +67,10 @@
 			cursor: pointer;
 		}
 		
-		#top {
-			background-color: #202225;
-			height: 20px;
-			width: 100%;
-		}
     </style>
 </head>
 	
 <body>
-	<div id="top">
-		<header>
-			<div class="item2" id="x"><img src="assets/x.png" alt="x" height="20" width="20"></div>
-			<div class="item1" id="min"><img src="assets/min.png" alt="min" height="20" width="20"></div>
-			<div class="item1" id="max"><img src="assets/max.png" alt="max" height="20" width="20"></div>
-		</header>
-	</div>
 <form>
   <div class="main">
     <label>Game</label>
@@ -97,29 +85,9 @@
 <script>
     const electron = require('electron');
     const {ipcRenderer} = electron;
-	
-	const x = document.getElementById("x");
-	const max = document.getElementById("max");
-	const min = document.getElementById("min");
-	
-	x.addEventListener('click', sendX);
-	max.addEventListener('click', sendMax);
-	min.addEventListener('click', sendMin);
 
     const form = document.querySelector('form');
     form.addEventListener('submit', submitForm);
-	
-	function sendX(e) {
-		ipcRenderer.send('x');
-	}
-	
-	function sendMax(e) {
-		ipcRenderer.send('max');
-	}
-	
-	function sendMin(e) {
-		ipcRenderer.send('min');
-	}
 
     function submitForm(e) {
         e.preventDefault();

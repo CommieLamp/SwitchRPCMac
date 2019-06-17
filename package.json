@@ -1,6 +1,6 @@
 {
   "name": "switchrpc",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A Nintendo Switch Discord integration.",
   "main": "index.js",
   "scripts": {
@@ -19,12 +19,16 @@
   },
   "homepage": "https://github.com/Superleximus/SwitchRPCMac/#readme",
   "dependencies": {
-    "discord-rich-presence": "0.0.6",
-    "electron-squirrel-startup": "^1.0.0"
+    "discord-rich-presence": "github:devsnek/discord-rich-presence",
+    "electron-squirrel-startup": "^1.0.0",
+    "jquery": "^3.4.1",
+    "open": "^6.3.0",
+    "request": "^2.88.0",
+    "shell": "^0.5.0"
   },
   "devDependencies": {
     "asar": "^0.14.3",
-    "electron": "^1.8.4",
+    "electron": "^1.8.8",
     "electron-packager": "^11.2.0",
     "wine": "^0.9.8"
   }

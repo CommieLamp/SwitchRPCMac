@@ -1,6 +1,5 @@
 //config
-let production = true;
-let version = 3;
+let version = 4;
 
 const rpc = require('discord-rich-presence')('536748156805840907');
 const request = require('request');
@@ -22,12 +21,12 @@ if (handleSquirrelEvent(app)) {
 //Listen For App to be Ready
 app.on('ready', function() {
     //create window
-    mainWindow = new BrowserWindow({width: 600, height: 400, frame: false});
+    mainWindow = new BrowserWindow({width: 600, height: 400, frame: true, minimizable: false, maximizable: false});
     mainWindow.setMenu(null);
     //Load HTML
     request('https://f7472735-a-a01a538a-s-sites.googlegroups.com/a/scobey.us/rpcjsonimage/rpc.json', function(error, res, body) {
         wData = JSON.parse(body);
-        if (version < wData.version && production === true) {
+        if (version < wData.version) {
             mainWindow.loadURL(url.format({
                 pathname: path.join(__dirname, 'update.html'),
                 protocol: 'file:',
@@ -57,6 +56,10 @@ app.on('ready', function() {
 
     Menu.setApplicationMenu(home);
 
+});
+
+ipcMain.on('giog', function() {
+	open("http://www.google.com");
 });
 
 ipcMain.on('x', function() {
