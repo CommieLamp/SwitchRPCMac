@@ -5,4 +5,4 @@ If you have any issues or find any bugs you can get assistance on the [support s
 
 Keep in mind they may not be able to support you as this version of SwitchRPC has some modifications made.
 
-Original SwitchRPC Copyright 2018 NintenZone Technologies. Modifications Copyright 2019 Seize The Means of Productions. Nintendo Switch, and the Nintendo Switch logos are property of Nintendo. macOS, Mac, Macintosh, and some elements of UI and design property of Apple Inc.
+Original SwitchRPC Copyright 2018 NintenZone Technologies. Modifications Copyright 2019 Lex Scobey. Nintendo Switch, and the Nintendo Switch logos are property of Nintendo. macOS, Mac, Macintosh, and some elements of UI and design property of Apple Inc.
